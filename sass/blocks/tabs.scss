@@ -1,0 +1,78 @@
+.tabs {
+	padding-top: 8vh;
+	background-image: url('../img/4th-section.jpg');
+	background-attachment: fixed;
+	min-height: 100vh;
+	background-size: cover;
+	background-position: center center;
+}
+
+.tabs__content {
+	margin-bottom: 30px;
+}
+
+.tabs__item {
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	width: 80%;
+	transition: opacity 500ms;
+
+	& img {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+}
+
+.tabs__item--active {
+	display: block;
+}
+
+.tabs__text {
+	margin: 0;
+	padding: 25px;
+	color: $white;
+	line-height: 25px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.tabs__btns {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.tabs__btn {
+	@include button($bg: transparent);
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	font-size: inherit;
+	border-width: 4px;
+	border-color: $white;
+	transition: color 500ms;
+
+	&:hover,
+	&:focus {
+		color: $first;
+	}
+}
+
+.tabs__btn--active {
+	border-color: $first;
+}
+
+@media (max-width: 768px) {
+	.tabs__item {
+		width: 100%;
+	}
+
+	.tabs__text {
+		text-align: justify;
+	}
+}

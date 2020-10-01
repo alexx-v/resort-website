@@ -1,0 +1,45 @@
+.banner {
+	padding-top: 30vh;
+	text-align: center;
+	background-image: url('../img/1st-section.jpg');
+}
+
+.banner__title {
+	margin: 0;
+	font-size: 130px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: $white;
+}
+
+.banner__tagline {
+	margin: 0;
+	margin-bottom: 20px;
+	font-size: 48px;
+	font-weight: 600;
+	color: $first;
+}
+
+.banner__btn {
+	@include button();
+}
+
+@media (max-width: 960px) {
+	.banner__title {
+		font-size: 80px;
+	}
+
+	.banner__tagline {
+		font-size: 30px;
+	}
+}
+
+@media (max-width: 768px) {
+	.banner__title {
+		font-size: 50px;
+	}
+
+	.banner__tagline {
+		font-size: 20px;
+	}
+}

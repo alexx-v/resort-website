@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+	box-sizing: border-box;
+	background-color: $bgMain;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img {
+	max-width: 100%;
+}
+
+body {
+	position: relative; /* we need this for the scrollspy */
+	font-family: 'Open Sans', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+.container {
+	@include min-max(320px, 100%, 0px);
+}
+
+.wrap {
+	@include min-max(320px, 1200px, 0px);
+}
+
+.visually-hidden {
+	@include visually-hidden();
+}

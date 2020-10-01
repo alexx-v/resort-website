@@ -1,0 +1,15 @@
+.photos {
+	padding-top: 30vh;
+	background-image: url('../img/3rd-section.jpg');
+}
+
+.photos__link {
+	display: block;
+
+	& img {
+		border: 4px solid $first;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

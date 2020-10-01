@@ -1,0 +1,52 @@
+.about {
+	padding: 20px 30px;
+
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.about__title {
+	position: relative;
+	margin: 0;
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	font-size: 24px;
+	font-weight: 500;
+	color: $white;
+	text-transform: capitalize;
+
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		background-color: $first;
+		width: 45px;
+		height: 3px;
+	}
+}
+
+.about__text {
+	margin: 0;
+	margin-bottom: 30px;
+	color: $white;
+}
+
+.about__list {
+	margin: 0;
+	margin-bottom: 20px;
+	padding: 0;
+	list-style: none;
+	color: $white;
+
+	& li {
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.about__btn {
+	@include button();
+}

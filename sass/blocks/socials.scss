@@ -1,0 +1,24 @@
+.socials {
+	padding: 0;
+	list-style: none;
+}
+
+.socials__item {
+	font-size: 20px;
+
+	& a {
+		display: block;
+		text-decoration: none;
+
+		&:hover i,
+		&:focus i {
+			transform: rotate(360deg);
+		}
+
+		& i {
+			color: $bgMain;
+			line-height: 50px;
+			transition: transform 500ms;
+		}
+	}
+}

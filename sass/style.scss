@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+@import 'normalize';
+@import 'variables';
+@import 'fonts';
+@import 'mixins';
+@import 'core';
+@import 'tiny-slider';
+
+@import 'blocks/navbar';
+@import 'blocks/parallax';
+@import 'blocks/banner';
+@import 'blocks/services';
+@import 'blocks/benefits';
+@import 'blocks/about';
+@import 'blocks/photos';
+@import 'blocks/tabs';
+@import 'blocks/contact';
+@import 'blocks/footer';
+@import 'blocks/socials';
